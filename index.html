@@ -811,6 +811,50 @@
   }
   .notes ul{padding-left:24px;color:#555}
   .notes li{margin:8px 0;line-height:1.7}
+  .cancel-policy{margin-top:24px}
+  .cancel-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:8px;
+  }
+  .cancel-table tr{
+    border-bottom:1px dashed #e5d8b8;
+  }
+  .cancel-table tr:last-child{border-bottom:none}
+  .cancel-table th{
+    text-align:left;
+    padding:12px 8px;
+    font-weight:700;
+    color:var(--navy);
+    width:60%;
+    font-size:.95rem;
+  }
+  .cancel-table td{
+    padding:12px 8px;
+    text-align:right;
+    font-size:1rem;
+    color:#444;
+  }
+  .cancel-table .free{
+    color:var(--green);
+    font-weight:900;
+    font-size:1.1rem;
+  }
+  .cancel-table .full{
+    color:var(--coral);
+    font-size:1.15rem;
+  }
+  @media (max-width:768px){
+    .cancel-table th, .cancel-table td{
+      display:block;
+      width:100%;
+      text-align:left;
+      padding:6px 0;
+    }
+    .cancel-table th{padding-top:14px;font-size:.9rem}
+    .cancel-table td{padding-bottom:10px;text-align:right}
+    .cancel-table tr{padding:8px 0}
+  }
 
   /* ========== CTA FINAL ========== */
   .cta-final{
@@ -1329,6 +1373,21 @@
       <li>糸魚川駅までの交通費はツアー料金に含まれていません。</li>
       <li>定員は33名限定、先着順でのご案内となります。</li>
     </ul>
+  </div>
+
+  <div class="notes-inner cancel-policy">
+    <h4>📋 キャンセル規定</h4>
+    <p style="margin-bottom:14px;color:#555">お客様都合によるキャンセルの場合、下記の取消料を申し受けます。</p>
+    <table class="cancel-table">
+      <tr><th>旅行開始日の21日前まで</th><td><span class="free">無料</span></td></tr>
+      <tr><th>旅行開始日の20日前〜8日前</th><td>旅行代金の <strong>20％</strong></td></tr>
+      <tr><th>旅行開始日の7日前〜2日前</th><td>旅行代金の <strong>30％</strong></td></tr>
+      <tr><th>旅行開始日の前日</th><td>旅行代金の <strong>50％</strong></td></tr>
+      <tr><th>旅行開始日当日・無連絡不参加</th><td>旅行代金の <strong class="full">100％</strong></td></tr>
+    </table>
+    <p style="margin-top:14px;font-size:.9rem;color:#555;background:#fff8e7;padding:12px 16px;border-radius:8px">
+      ※主催者都合によりツアーを中止する場合は、参加費を全額返金いたします。
+    </p>
   </div>
 </section>
 
