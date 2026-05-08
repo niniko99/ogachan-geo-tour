@@ -882,6 +882,27 @@
     padding:60px 20px 40px;
     text-align:center;
   }
+  .footer-mascot{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+  }
+  .mascot-tako{
+    width:110px;
+    height:auto;
+    animation:bounce 3s ease-in-out infinite;
+  }
+  .mascot-earth{
+    width:90px;
+    height:auto;
+    border-radius:50%;
+    animation:float 5s ease-in-out infinite;
+    box-shadow:0 0 30px rgba(126,214,245,.4);
+  }
+  .footer-info{flex:1;min-width:240px;max-width:340px}
   footer .org-name{
     font-size:1.5rem;
     font-weight:900;
@@ -892,13 +913,12 @@
   footer .kids-club{
     color:var(--sun);
     font-size:1.2rem;
-    margin-bottom:20px;
+    margin-bottom:14px;
     font-weight:700;
   }
   footer .contact{
     font-size:1rem;
     opacity:.9;
-    margin-bottom:20px;
   }
   footer .copyright{
     font-size:.85rem;
@@ -906,6 +926,11 @@
     margin-top:30px;
     padding-top:20px;
     border-top:1px solid rgba(255,255,255,.15);
+  }
+  @media (max-width:768px){
+    .mascot-tako{width:90px}
+    .mascot-earth{width:75px}
+    .footer-mascot{gap:16px}
   }
 
   /* ========== RESPONSIVE ========== */
@@ -1279,9 +1304,15 @@
 
 <!-- ========== FOOTER ========== -->
 <footer>
-  <p class="org-name">PALE BLUE DOT</p>
-  <p class="kids-club">⭐ Kids Club 星の子 ⭐</p>
-  <p class="contact">📧 hoshinoko2024@gmail.com</p>
+  <div class="footer-mascot">
+    <img src="images/logo-tako.png" alt="星の子マスコット" class="mascot-tako">
+    <div class="footer-info">
+      <p class="org-name">PALE BLUE DOT</p>
+      <p class="kids-club">⭐ Kids Club 星の子 ⭐</p>
+      <p class="contact">📧 hoshinoko2024@gmail.com</p>
+    </div>
+    <img src="images/logo-earth.png" alt="地球" class="mascot-earth">
+  </div>
   <p class="copyright">© PALE BLUE DOT Kids Club 星の子 / おがちゃんジオツアー 〜日本の宝探し in 糸魚川〜</p>
 </footer>
 
