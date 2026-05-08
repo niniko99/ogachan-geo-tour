@@ -100,6 +100,26 @@
   .sparkle-4{bottom:25%;right:6%;animation-delay:1.5s}
   .sparkle-5{top:50%;right:20%;animation-delay:.8s;font-size:18px}
 
+  /* ヒーロー上のマスコット */
+  .hero-mascot{position:absolute;z-index:3;filter:drop-shadow(0 6px 14px rgba(0,0,0,.15))}
+  .hero-mascot-tako{
+    width:90px;
+    top:30px;
+    left:4%;
+    animation:float 5s ease-in-out infinite;
+  }
+  .hero-mascot-earth{
+    width:80px;
+    top:50px;
+    right:4%;
+    animation:float 6s ease-in-out infinite reverse;
+    border-radius:50%;
+  }
+  @media (max-width:768px){
+    .hero-mascot-tako{width:60px;top:20px;left:3%}
+    .hero-mascot-earth{width:55px;top:30px;right:3%}
+  }
+
   .hero-inner{
     position:relative;
     max-width:1100px;
@@ -1045,6 +1065,9 @@
   <div class="cloud cloud-1"></div>
   <div class="cloud cloud-2"></div>
   <div class="cloud cloud-3"></div>
+  <!-- マスコット -->
+  <img src="images/logo-tako.png" alt="星の子マスコット" class="hero-mascot hero-mascot-tako">
+  <img src="images/logo-earth.png" alt="地球" class="hero-mascot hero-mascot-earth">
   <!-- キラキラ -->
   <div class="sparkle sparkle-1">✨</div>
   <div class="sparkle sparkle-2">⭐</div>
