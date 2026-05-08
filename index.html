@@ -957,9 +957,13 @@
     box-shadow:0 0 30px rgba(255,255,255,.5) !important;
   }
   @media (max-width:768px){
-    .mascot-tako{width:90px}
-    .mascot-earth{width:75px}
-    .footer-mascot{gap:16px}
+    .mascot-tako{width:80px;order:1}
+    .mascot-earth{width:70px;order:3}
+    .footer-mascot{
+      flex-direction:column;
+      gap:14px;
+    }
+    .footer-mascot .footer-info{order:2;min-width:0}
   }
 
   /* ========== RESPONSIVE ========== */
