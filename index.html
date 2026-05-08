@@ -38,6 +38,13 @@
   img{max-width:100%;display:block}
   a{color:inherit;text-decoration:none}
 
+  /* スマホ専用改行・PC専用改行 */
+  .br-sp{display:none}
+  @media (max-width:768px){
+    .br-sp{display:inline}
+    .br-pc{display:none}
+  }
+
   /* ========== ANIMATIONS ========== */
   @keyframes bounce {
     0%, 100% { transform: translateY(0); }
@@ -929,7 +936,7 @@
     <div class="badge-limited">🎯 限定 <span>33</span> 名</div>
 
     <p class="hero-title-1">これ、ただの石じゃない。</p>
-    <h1 class="hero-title-2">プロと一緒に見つける、<br><span class="yellow">"本物"の宝探し</span>。</h1>
+    <h1 class="hero-title-2">プロと一緒に見つける、<br><span class="yellow">"本物"の<br class="br-sp">宝探し</span>。</h1>
 
     <div class="hero-image-wrap">
       <span class="hero-image-deco hero-image-deco-1">💎</span>
@@ -939,7 +946,7 @@
 
     <div class="main-title-box">
       <h2 class="tour-name-jp">おがちゃん<br>ジオツアー</h2>
-      <p class="tour-name-sub">～ 世界最古の【翡翠】が眠る街、糸魚川で宝探し ～</p>
+      <p class="tour-name-sub">～ 世界最古の【翡翠】が眠る街、<br class="br-sp">糸魚川で宝探し ～</p>
     </div>
 
     <p class="hero-tagline">📚 学びと遊びが両立できる、親子の体験型ツアー 🎒</p>
@@ -953,9 +960,9 @@
     <p class="story-question">「ねぇ、これってなんの石？」</p>
     <p class="story-text">
       子どもの目がキラキラ輝く瞬間。<br>
-      <strong>ヒスイ・水晶・メノウ</strong>……日本列島が生まれた糸魚川には、<br>
-      世界が驚く"本物の宝石"が今も眠っています。<br><br>
-      石のプロ「おがちゃん」と一緒に、親子で宝探しの冒険にでかけよう！
+      <strong>ヒスイ・水晶・メノウ</strong>……<br class="br-sp">日本列島が生まれた糸魚川には、<br>
+      世界が驚く"本物の宝石"が<br class="br-sp">今も眠っています。<br><br>
+      石のプロ「おがちゃん」と一緒に、<br class="br-sp">親子で宝探しの冒険にでかけよう！
     </p>
   </div>
 </section>
@@ -968,7 +975,7 @@
       <span class="underline">石のプロが直接ガイド！</span>
       <span class="deco-emoji">🎤</span>
     </h2>
-    <p class="section-lead">専門家と一緒だから、ただの石拾いでは終わらない。<br>"本物の宝石"を見分ける目を育てよう！</p>
+    <p class="section-lead">専門家と一緒だから、<br class="br-sp">ただの石拾いでは終わらない。<br>"本物の宝石"を<br class="br-sp">見分ける目を育てよう！</p>
 
     <div class="guides-grid">
 
@@ -1001,11 +1008,11 @@
 <!-- ========== JADE HIGHLIGHT ========== -->
 <section class="jade-highlight">
   <div class="jade-highlight-inner">
-    <h2>これが、糸魚川で見つかる "本物" の宝石。</h2>
+    <h2>これが、糸魚川で見つかる<br class="br-sp"> "本物" の宝石。</h2>
     <p>
-      青い海と空の下、子どもの小さな手のひらにのる、緑色の小さな石。<br>
+      青い海と空の下、<br class="br-sp">子どもの小さな手のひらにのる、<br class="br-sp">緑色の小さな石。<br>
       これが、世界最古の<strong>ヒスイ</strong>。<br>
-      日本列島が生まれた場所だからこそ出会える、奇跡の宝物。
+      日本列島が生まれた場所だからこそ<br class="br-sp">出会える、奇跡の宝物。
     </p>
     <div class="jade-image">
       <img src="images/jade.jpg" alt="海岸で見つかったヒスイ">
@@ -1046,7 +1053,7 @@
       <span class="underline">2日間の冒険スケジュール</span>
       <span class="deco-emoji">🗺️</span>
     </h2>
-    <p class="section-lead">糸魚川の自然・地質・温泉・古民家まで、ぜんぶ体験できる充実プログラム！</p>
+    <p class="section-lead">糸魚川の自然・地質・温泉・古民家まで、<br class="br-sp">ぜんぶ体験できる充実プログラム！</p>
 
     <div class="day-tabs">
 
@@ -1160,7 +1167,7 @@
       <span class="underline">ツアーの魅力</span>
       <span class="deco-emoji">⭐</span>
     </h2>
-    <p class="section-lead">ただの観光じゃない。「学び」と「遊び」と「家族の思い出」を、まるごと持ち帰れる2日間！</p>
+    <p class="section-lead">ただの観光じゃない。<br class="br-sp">「学び」と「遊び」と「家族の思い出」を、<br class="br-sp">まるごと持ち帰れる2日間！</p>
     <div class="features-grid">
       <div class="feature-item">
         <div class="feature-icon-circle">👨‍👦</div>
@@ -1221,10 +1228,10 @@
     </h2>
     <p style="display:inline-block;background:var(--turquoise);color:#fff;padding:8px 24px;border-radius:30px;font-weight:900;margin-bottom:20px;box-shadow:0 4px 0 var(--turquoise-deep)">🚄 新幹線でアクセス良好</p>
     <p class="lead-text">
-      日本列島の大きな秘密が眠る場所、糸魚川。<br>
-      ここは「フォッサマグナ」と呼ばれる地球規模の境界線が走り、<br>
-      ヒスイをはじめ、世界的にも珍しい石たちが今も静かに息づいています。<br><br>
-      <strong>親子で"本物の宝物"を見つけに行こう！</strong>
+      日本列島の大きな秘密が眠る場所、<br class="br-sp">糸魚川。<br>
+      ここは「フォッサマグナ」と呼ばれる<br class="br-sp">地球規模の境界線が走り、<br>
+      ヒスイをはじめ、世界的にも珍しい石たちが<br class="br-sp">今も静かに息づいています。<br><br>
+      <strong>親子で"本物の宝物"を<br class="br-sp">見つけに行こう！</strong>
     </p>
     <div class="about-image">
       <img src="images/takanami-mountain.jpg" alt="糸魚川の絶景・明星山と高浪の池">
@@ -1248,10 +1255,10 @@
 <!-- ========== CTA FINAL ========== -->
 <section class="cta-final" id="cta">
   <div class="cta-final-inner">
-    <h2>限定33名の冒険、<br>あなたとお子さんの席は空いていますか？</h2>
+    <h2>限定33名の冒険、<br>あなたとお子さんの席は<br class="br-sp">空いていますか？</h2>
     <p class="lead">
-      子どもの「すごい！」が、未来の好奇心を育てる。<br>
-      この夏、一緒に"本物"を見つけに行こう。
+      子どもの「すごい！」が、<br class="br-sp">未来の好奇心を育てる。<br>
+      この夏、一緒に<br class="br-sp">"本物"を見つけに行こう。
     </p>
     <div class="deadline-box">📅 お申込み締切：6月10日（火）</div>
     <p class="judge-date">催行判断日：5月20日（水）</p>
