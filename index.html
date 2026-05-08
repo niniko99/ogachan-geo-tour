@@ -307,11 +307,27 @@
 
   /* ========== GUIDES ========== */
   .guides{background:linear-gradient(135deg, #e0f7fa 0%, #fff8e7 100%)}
+  .guest{background:linear-gradient(135deg, #f3f0ff 0%, #fff0f5 100%);position:relative}
+  .guest::before{
+    content:"🎈🎉🎊";
+    position:absolute;
+    top:30px;
+    right:8%;
+    font-size:30px;
+    opacity:.4;
+    animation:float 5s ease-in-out infinite;
+    letter-spacing:8px;
+  }
   .guides-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
     gap:40px;
     margin-top:50px;
+  }
+  .guides-grid.single-card{
+    max-width:480px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .guide-card{
     background:#fff;
@@ -1017,7 +1033,7 @@
     </h2>
     <p class="section-lead">専門家と一緒だから、<br class="br-sp">ただの石拾いでは終わらない。<br>"本物の宝石"を<br class="br-sp">見分ける目を育てよう！</p>
 
-    <div class="guides-grid">
+    <div class="guides-grid single-card">
 
       <div class="guide-card ogachan">
         <div class="guide-photo-wrap">
@@ -1030,15 +1046,31 @@
         <p class="guide-desc">石の見分け方を楽しく解説！<br>"本物"を見つけるコツを教えます！<br>子どもたちの「これ何の石？」に、ぜんぶ答えてくれる頼れるガイド。</p>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ========== GUEST ========== -->
+<section class="guest">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="deco-emoji">🎉</span>
+      <span class="underline">特別ゲストもやってくる！</span>
+      <span class="deco-emoji">🎉</span>
+    </h2>
+    <p class="section-lead">講師としてじゃなく、<br class="br-sp">"いち参加者" として遊びに来る、<br class="br-sp">スペシャルなお友だち！</p>
+
+    <div class="guides-grid single-card">
+
       <div class="guide-card pika">
         <div class="guide-photo-wrap">
           <span class="guide-tag">あそびに来るよ！</span>
           <img src="images/pika.jpg" alt="特別ゲスト ピカ">
         </div>
         <h3 class="guide-name">ピカ</h3>
-        <p class="guide-role">特別ゲスト</p>
-        <div class="guide-bubble">石の勉強しに行くよ〜！</div>
-        <p class="guide-desc">子どもが夢中になる体験づくりのプロ！<br>今回はピカも石の勉強をしに遊びに来ます♪<br>子どもたちと一緒に楽しさを引き出してくれる存在。</p>
+        <p class="guide-role">特別ゲスト（参加者として参加）</p>
+        <div class="guide-bubble">みんなと一緒に楽しむよ〜！</div>
+        <p class="guide-desc">子どもが夢中になる体験づくりのプロ。<br>でも今回は講師ではなく、<br class="br-sp">"いち参加者" として参加！<br>みんなと一緒に石の勉強をしに、<br class="br-sp">ただただ遊びに来ます♪</p>
       </div>
 
     </div>
