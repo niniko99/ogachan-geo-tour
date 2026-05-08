@@ -231,6 +231,44 @@
     margin-top:24px;
     font-weight:700;
   }
+  .hero-keyword-banner{
+    display:inline-block;
+    margin:20px auto 0;
+    background:rgba(255,255,255,.85);
+    padding:18px 28px;
+    border-radius:20px;
+    border:3px dashed var(--coral);
+    box-shadow:0 8px 24px rgba(0,0,0,.1);
+    backdrop-filter:blur(6px);
+    text-align:center;
+    line-height:1.7;
+  }
+  .banner-emoji{font-size:1.8rem;display:inline-block;vertical-align:middle;margin-right:6px}
+  .banner-text{
+    font-size:1.05rem;
+    font-weight:700;
+    color:var(--navy);
+    vertical-align:middle;
+  }
+  .banner-text strong{color:var(--coral);font-size:1.15em}
+  .banner-tag{
+    display:inline-block;
+    margin-top:6px;
+    background:var(--coral);
+    color:#fff;
+    padding:4px 18px;
+    border-radius:20px;
+    font-weight:900;
+    font-size:1rem;
+    box-shadow:0 4px 0 var(--coral-deep);
+  }
+  @media (max-width:768px){
+    .hero-keyword-banner{padding:16px 20px;margin:16px auto 0}
+    .banner-emoji{font-size:1.4rem}
+    .banner-text{font-size:.92rem}
+    .banner-tag{font-size:.9rem}
+  }
+
   .hero-cta{
     display:inline-flex;
     align-items:center;
@@ -1188,6 +1226,11 @@
     </div>
 
     <p class="hero-tagline">📚 学びと遊びが両立できる、<br class="br-sp"><span style="white-space:nowrap">親子の体験型ツアー 🎒</span></p>
+    <div class="hero-keyword-banner">
+      <span class="banner-emoji">🤝</span>
+      <span class="banner-text">専門ガイド＆体験のプロが<br class="br-sp">宿泊先まで<strong>1泊2日ずっと一緒</strong></span><br>
+      <span class="banner-tag">"完全同行ツアー"</span>
+    </div>
     <a href="#cta" class="hero-cta">お申込みはこちら →</a>
   </div>
 </section>
@@ -1267,8 +1310,8 @@
       <span class="underline">"完全同行ツアー"<br class="br-sp">だからこそ生まれる体験</span>
       <span class="deco-emoji">✨</span>
     </h2>
-    <p class="unique-tagline"><strong>日帰り体験でも、観光バスツアーでもない。</strong></p>
-    <p class="section-lead">専門ガイドとスタッフが、<br class="br-sp">1泊2日まるごと一緒に過ごす<br class="br-sp"><span class="highlight-keyword">"完全同行ツアー"</span>。<br>だからこそ、子どもの「これなに？」が、<br class="br-sp">その瞬間に学びへとつながります。</p>
+    <p class="unique-tagline"><strong>日帰り体験でも、ふつうの添乗員同行ツアーでもない。</strong></p>
+    <p class="section-lead">専門ガイドと体験のプロが、<br class="br-sp">移動・食事・宿泊先まで<br class="br-sp">寝食を共にしながらずっと一緒の<br class="br-sp"><span class="highlight-keyword">"完全同行ツアー"</span>。<br>だからこそ、子どもの「これなに？」が、<br class="br-sp">その瞬間に学びへとつながります。</p>
 
     <div class="unique-grid">
 
@@ -1350,7 +1393,7 @@
         <li>1泊4食付き（1日目：昼・夕／2日目：朝・昼）</li>
         <li>体験料・入館料すべて込み</li>
         <li>現地バス移動</li>
-        <li>石の専門ガイド付き</li>
+        <li><strong style="color:var(--coral)">"完全同行"</strong>専門ガイド＆体験のプロ付き</li>
       </ul>
       <p class="price-note">※糸魚川駅までの交通費は含まれておりません。</p>
     </div>
