@@ -1002,12 +1002,19 @@
   }
   @media (max-width:768px){
     .mascot-tako{width:80px;order:1}
-    .mascot-earth{width:70px;order:3}
+    .mascot-earth{width:70px;order:2}
     .footer-mascot{
-      flex-direction:column;
-      gap:14px;
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
     }
-    .footer-mascot .footer-info{order:2;min-width:0}
+    .footer-mascot .footer-info{
+      order:3;
+      flex-basis:100%;
+      min-width:0;
+      max-width:100%;
+    }
   }
 
   /* ========== RESPONSIVE ========== */
