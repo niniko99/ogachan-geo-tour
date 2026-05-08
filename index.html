@@ -703,6 +703,89 @@
     line-height:1.7;
   }
 
+  /* ========== UNIQUE EXPERIENCE ========== */
+  .unique-section{
+    background:linear-gradient(180deg, #fffaf0 0%, #fff8e7 100%);
+    position:relative;
+  }
+  .unique-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+    margin-top:50px;
+  }
+  .unique-item{
+    background:#fff;
+    border-radius:24px;
+    padding:36px 28px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    border:3px solid #fff;
+    position:relative;
+    transition:transform .3s;
+  }
+  .unique-item:hover{transform:translateY(-6px)}
+  .unique-item:nth-child(1){border-color:var(--turquoise)}
+  .unique-item:nth-child(2){border-color:var(--sun)}
+  .unique-item:nth-child(3){border-color:var(--coral)}
+  .unique-icon{
+    width:84px;
+    height:84px;
+    border-radius:50%;
+    margin:0 auto 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2.4rem;
+    box-shadow:0 4px 12px rgba(0,0,0,.06);
+  }
+  .unique-item:nth-child(1) .unique-icon{background:linear-gradient(135deg, #b3e5fc 0%, #e0f7fa 100%)}
+  .unique-item:nth-child(2) .unique-icon{background:linear-gradient(135deg, #fff3a0 0%, #fff8e7 100%)}
+  .unique-item:nth-child(3) .unique-icon{background:linear-gradient(135deg, #d1c4e9 0%, #f3e5f5 100%)}
+  .unique-heading{
+    font-size:1.25rem;
+    color:var(--navy);
+    margin-bottom:16px;
+    font-weight:900;
+    text-align:center;
+    line-height:1.5;
+  }
+  .unique-desc{
+    font-size:.95rem;
+    line-height:1.9;
+    color:#444;
+  }
+  .unique-desc strong{
+    color:var(--turquoise-deep);
+    font-weight:900;
+  }
+  .unique-closing{
+    margin:50px auto 0;
+    text-align:center;
+    background:linear-gradient(135deg, #fff8e7 0%, #fff 100%);
+    border-radius:24px;
+    padding:36px 28px;
+    border:3px dashed var(--turquoise);
+    max-width:760px;
+  }
+  .unique-closing p{
+    font-size:1.1rem;
+    line-height:2;
+    font-weight:500;
+  }
+  .unique-closing strong{
+    color:var(--coral);
+    font-weight:900;
+    background:linear-gradient(transparent 60%, var(--sun) 60%);
+    padding:0 6px;
+  }
+  @media (max-width:768px){
+    .unique-grid{grid-template-columns:1fr}
+    .unique-icon{width:70px;height:70px;font-size:2rem}
+    .unique-heading{font-size:1.1rem}
+    .unique-closing p{font-size:1rem}
+    .unique-item{padding:28px 22px}
+  }
+
   /* ========== JADE HIGHLIGHT ========== */
   .jade-highlight{
     background:linear-gradient(135deg, var(--turquoise) 0%, var(--sky) 100%);
@@ -1147,6 +1230,60 @@
         <p class="guide-desc">子どもが夢中になる体験づくりのプロ。<br>でも今回は講師ではなく、<br class="br-sp">"いち参加者" として参加！<br>みんなと一緒に石の勉強をしに、<br class="br-sp">ただただ遊びに来ます♪</p>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ========== UNIQUE EXPERIENCE ========== -->
+<section class="unique-section">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="deco-emoji">✨</span>
+      <span class="underline">このツアーならではの体験</span>
+      <span class="deco-emoji">✨</span>
+    </h2>
+    <p class="section-lead">日帰りじゃ味わえない、<br class="br-sp">1泊2日だからこそ生まれる時間。<br>専門ガイドとスタッフがずっと同行するから、<br class="br-sp">子どもの「これなに？」が、<br class="br-sp">その瞬間に学びへとつながります。</p>
+
+    <div class="unique-grid">
+
+      <div class="unique-item">
+        <div class="unique-icon">🤝</div>
+        <h3 class="unique-heading">専門ガイドと講師が、<br class="br-sp">1泊2日ずっと同行</h3>
+        <p class="unique-desc">
+          石の専門ガイド <strong>おがちゃん</strong> と、<br class="br-sp">子どもの体験をサポートする <strong>ピカ先生</strong>が、<br class="br-sp">1泊2日まるごと同行します。<br><br>
+          海岸での石拾いはもちろん、<br class="br-sp">移動中のバス、宿泊先、食事の時間まで、<br>
+          子どもたちの「これなに？」「どうして？」を<br class="br-sp">その場で受け止めて、<br class="br-sp">学びにつなげていきます。
+        </p>
+      </div>
+
+      <div class="unique-item">
+        <div class="unique-icon">💭</div>
+        <h3 class="unique-heading">宿泊先でも、<br class="br-sp">興味が途切れない設計</h3>
+        <p class="unique-desc">
+          このツアーでは、<br class="br-sp">宿泊先でも講師・スタッフが一緒に過ごします。<br><br>
+          昼間に拾った石を見返したり、<br class="br-sp">体験を振り返ったり。<br>
+          子どもの興味がそばで支えられているから、<br class="br-sp">翌日の体験ももっと深まります。
+        </p>
+      </div>
+
+      <div class="unique-item">
+        <div class="unique-icon">🌙</div>
+        <h3 class="unique-heading">お子さま就寝後は、<br class="br-sp">自由参加の保護者交流タイム</h3>
+        <p class="unique-desc">
+          お子さまの就寝後には、<br class="br-sp">保護者同士でゆっくり話せる<br class="br-sp"><strong>自由参加の交流時間</strong>を予定しています。<br><br>
+          講師・スタッフも一緒に、<br class="br-sp">その日の発見を振り返ったり、<br class="br-sp">子育ての話をしたり。<br>
+          宿泊ツアーだからこそ生まれる、<br class="br-sp">保護者にとっての特別なひとときです。
+        </p>
+      </div>
+
+    </div>
+
+    <div class="unique-closing">
+      <p>
+        子どもにとっては、<strong>本物の宝石を探す冒険</strong>。<br>
+        親にとっては、<strong>同じ関心を持つ仲間とつながれる時間</strong>。<br>
+        学び・遊び・交流が、ぜんぶつながる<br class="br-sp"><strong>特別な2日間</strong>です。
+      </p>
     </div>
   </div>
 </section>
