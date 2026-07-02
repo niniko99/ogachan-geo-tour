@@ -270,8 +270,10 @@
   }
 
   .hero-cta{
-    display:inline-flex;
+    display:flex;
+    width:fit-content;
     align-items:center;
+    justify-content:center;
     gap:10px;
     background:var(--coral);
     color:#fff;
@@ -279,12 +281,17 @@
     border-radius:50px;
     font-size:1.3rem;
     font-weight:900;
-    margin-top:30px;
+    margin:30px auto 0;
     box-shadow:0 8px 0 var(--coral-deep), 0 12px 30px rgba(0,0,0,.2);
     transition:transform .15s, box-shadow .15s;
   }
   .hero-cta:active{transform:translateY(4px);box-shadow:0 4px 0 var(--coral-deep), 0 6px 16px rgba(0,0,0,.2)}
   .hero-cta:hover{transform:translateY(-3px);box-shadow:0 11px 0 var(--coral-deep), 0 16px 40px rgba(0,0,0,.25)}
+  .section-cta{
+    margin-top:38px;
+    text-align:center;
+  }
+  .section-cta .hero-cta{margin-top:0}
 
   /* ========== SECTION COMMON ========== */
   section{padding:80px 20px;position:relative}
@@ -1231,7 +1238,7 @@
       <span class="banner-text">糸魚川専門ガイドが<br class="br-sp">宿泊先まで<strong>1泊2日ずっと一緒</strong></span><br>
       <span class="banner-tag">"完全同行ツアー"</span>
     </div>
-    <a href="#cta" class="hero-cta">お申込みはこちら →</a>
+    <a href="#cta" class="hero-cta">お申込みはこちら</a>
   </div>
 </section>
 
@@ -1398,6 +1405,10 @@
       </ul>
       <p class="price-note">※糸魚川駅までの交通費は含まれておりません。</p>
     </div>
+
+    <div class="section-cta">
+      <a href="#cta" class="hero-cta">お申込みはこちら</a>
+    </div>
   </div>
 </section>
 
@@ -1491,6 +1502,10 @@
     </div>
 
     <p style="text-align:center;margin-top:30px;font-size:.9rem;color:#666">※天候・道路状況・現地の状況により、行程の順番を変更する場合がございます。</p>
+
+    <div class="section-cta">
+      <a href="#cta" class="hero-cta">お申込みはこちら</a>
+    </div>
   </div>
 </section>
 
